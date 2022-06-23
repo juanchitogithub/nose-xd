@@ -1,0 +1,242 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body{
+    font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+  }
+  /* Utililtarios */
+  .container{
+    width: 80%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5em;
+    margin: 0 0.1em;
+    border-radius: 0.5em;
+}
+
+    .btnprimary {
+    color: white;
+    background-color: #0F2620;
+}
+
+    .btnsecondary {
+    color: white;
+    background-color: #7BA69A;
+}
+
+    .btndanger {
+    color: white;
+    background-color: #B34E4A;
+}
+
+    .btninfol {
+    color: black;
+    background-color: #DDF2CE;
+}
+
+    .btndark {
+    color: white;
+    background-color: #423931;
+}
+
+  .bgheader{
+    background-image: url('../assets/bg-header-min.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 18.75em;
+  }
+  
+.bgnavbar{
+    background-color: rgba(0, 0, 0, 0.26);
+    padding: 1.5em 0;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+@media (min-width:568px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navbarbrand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+@media(min-width: 768px) {
+    .navbarbrand {
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+}
+
+.navbarbrand img{
+    width: 2em;
+}
+
+.navbarnav{
+    background-color: rgba(0, 0, 0, 0.507);
+    padding: 1em;
+    border-radius: 0.3em;
+}
+
+.navlink{
+    display: inline-block;
+    padding: 0.3em;
+    text-decoration: white;
+    color: white;
+}
+
+.navlink:hover{
+    background-color: white;
+    color: black;
+    border-radius: 0.4em;
+}
+
+/* Main */
+
+.main{
+    background-color: white;
+    padding: 0.3em;
+    margin-top: -2em;
+    border-radius: 0.2em;
+}
+
+.maintitle{
+    text-align: center;
+    text-transform: uppercase;
+}
+@media(min-width:768px) {
+
+    .tienda {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+}
+
+/*card*/
+
+.card {
+    background-color: #B34E4A;
+    color: white;
+    overflow: hidden;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+
+.cardimg {
+    width: 100%;
+}
+
+.cardbody {
+    padding: 1em;
+}
+
+.cardbody h5 {
+    font-size: 1.5rem;
+    margin: 1em 0;
+    font-weight: 500;
+}
+
+.cardbody p {
+    font-weight: 200;
+}
+
+/* Nosotros */
+
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    background-color: #423931;
+    padding: 0.3em;
+    border-radius: 0.5em;
+}
+
+.nosotroscolimg {
+    background-image: url('../assets/nosotros-min.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 28.875em;
+    width: 100%;
+    order: 2;
+    border-radius: 0.5em;
+}
+
+@media(min-width:568px){
+    .nosotroscolimg {
+        height: 31.25em;
+    }
+}
+
+.nosotroscoltext {
+    order: 1;
+}
+/**flex debe estar en ambos elementos para que funcione la distribucion igual*/
+@media(min-width:768px){
+    .nosotros{
+        flex-direction: row;
+    }
+    .nosotroscolimg {
+        order: 1;
+        flex: 1 1 0;
+    }
+    .nosotroscoltext{
+        order: 2;
+        flex: 1 1 0;
+    }
+}
+
+.nosotrosbody {
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+.nosotrosbody  h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nosotrosbody p {
+    font-weight: 200;
+}
+
+.bgfooter {
+    background-color: #423931;
+    color: #DDF2CE;
+}
+
+.bgfooter p {
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+}
+/* queries */
+
